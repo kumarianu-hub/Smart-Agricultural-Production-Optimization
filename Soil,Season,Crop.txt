@@ -1,0 +1,13 @@
+Soil,Season,Crop
+Loamy,Summer,Maize
+Loamy,Winter,Wheat
+Clay,Summer,Rice
+Clay,Winter,Barley
+Sandy,Summer,Groundnut
+Sandy,Winter,Millets
+Black,Summer,Cotton
+Black,Winter,Gram
+Red,Summer,Groundnut
+Red,Winter,Sunflower
+Alluvial,Summer,Sugarcane
+Alluvial,Winter,Wheat

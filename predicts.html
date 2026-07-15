@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Crop Recommendation</h1>
+
+<form method="POST">
+
+<label>Farmer Name</label>
+
+<input
+type="text"
+name="farmer"
+placeholder="Enter Farmer Name"
+required>
+
+<label>Soil Type</label>
+
+<select name="soil">
+
+<option>Loamy</option>
+<option>Clay</option>
+<option>Sandy</option>
+<option>Black</option>
+<option>Red</option>
+<option>Alluvial</option>
+
+</select>
+
+<label>Season</label>
+
+<select name="season">
+
+<option>Summer</option>
+<option>Winter</option>
+
+</select>
+
+<label>Land Area (Acres)</label>
+
+<input
+type="number"
+step="0.1"
+name="area"
+required>
+
+<button type="submit">
+
+Predict
+
+</button>
+
+</form>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

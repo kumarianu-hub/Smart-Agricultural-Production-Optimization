@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Prediction Result</title>
+
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+<h2>Hello {{ farmer }}</h2>
+
+<p>
+
+<strong>Recommended Crop:</strong>
+
+{{ crop }}
+
+</p>
+
+<p>
+
+<strong>Estimated Yield:</strong>
+
+{{ yield_value }} Tons
+
+</p>
+
+<a href="/predict">
+
+<button>
+
+Predict Again
+
+</button>
+
+</a>
+
+<a href="/">
+
+<button>
+
+Home
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>
